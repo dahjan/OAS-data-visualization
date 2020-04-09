@@ -65,16 +65,6 @@ shinyServer(function(input, output) {
         }
     })
     
-    output$n_samp <- renderText({
-        # Get number of samples
-        n <- dim(full_input())[1]
-        
-        # Format the number
-        f <- format(n, big.mark="'")
-        
-        paste("There are a total of <strong>", f, "samples </strong> in the", input$dataset, "dataset")
-    })
-    
     output$meta_title <- renderText({
         paste("Metadata visualization for the", input$dataset, "dataset.")
     })

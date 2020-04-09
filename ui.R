@@ -64,7 +64,6 @@ shinyUI(navbarPage("OAS",
             
             # Main panel for displaying outputs
             mainPanel(
-                tags$p(htmlOutput("n_samp")),
                 plotOutput("meta_plot") %>%
                     withSpinner(color="#0dc5c1")
             )
