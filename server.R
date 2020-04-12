@@ -39,7 +39,7 @@ shinyServer(function(input, output) {
         # Format the number
         f <- format(n, big.mark="'")
         
-        paste("The", input$dataset, "dataset contains <strong>", f, "sequences </strong>.")
+        paste("The", input$dataset, "dataset contains <strong>", f, "sequences</strong>.")
     })
     
     output$bar_plot <- renderPlot({
@@ -66,7 +66,7 @@ shinyServer(function(input, output) {
     })
     
     output$meta_title <- renderText({
-        paste("Metadata visualization for the", input$dataset, "dataset.")
+        paste("Metadata visualization for the", input$dataset, "dataset")
     })
     
     output$meta_plot <- renderPlot({
