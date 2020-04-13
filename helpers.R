@@ -21,6 +21,6 @@ create_bar_plot <- function(df, label){
     geom_bar(stat="identity") +
     xlab("") +
     ylab(label) +
-    geom_text(aes(label = format(n, big.mark="'")),
+    geom_text(aes(label = formatC(n, format="e", digits=1)),
               vjust = -0.5)
 }
