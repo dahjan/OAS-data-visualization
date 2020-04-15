@@ -11,7 +11,7 @@ Barplot visualization of sequences found in all of the separate studies. At the 
 
 ## Metadata
 
-Visualization of different metadata entries as bar plots, again with the number of sequences shown above each bar. Currently, this only works for human light-chain sequences; the rest will be added at a later point.
+Visualization of different metadata entries as bar plots, again with the number of sequences shown above each bar.
 
 ## Usage
 
